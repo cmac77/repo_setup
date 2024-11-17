@@ -1,0 +1,67 @@
+name: myenv  # Replace with your environment name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Libraries
+  - python=3.12
+  - numpy                     # Core library for numerical computations
+  - pandas                    # Data manipulation and analysis
+
+  # Machine Learning
+  - scikit-learn              # General machine learning library
+  - xgboost=2.1.2             # Gradient boosting library, pinned for stability
+  - imbalanced-learn          # Handling imbalanced datasets
+  - shap                      # Explainability for machine learning models
+
+  # GPU-Accelerated Computing
+  - cupy                      # GPU-accelerated computations, similar to NumPy
+
+  # Data Visualization
+  - matplotlib                # Data visualization library
+  - seaborn                   # Statistical data visualization
+  - statsmodels               # Statistical modeling and econometrics
+
+  # Utilities and Helpers
+  - dill                      # Serialization for complex Python objects
+  - click                     # Creating command-line interfaces
+  - pyprojroot                # Managing project root paths
+  - tqdm                      # Progress bar utility
+  - fsspec                    # File system specification for remote data handling
+  - psutil                    # System and process utilities
+  - json-log-formatter        # JSON formatted logging for structured logs
+
+  # Jupyter and Interactive Computing
+  - ipython                   # Interactive Python shell
+  - ipykernel                 # Jupyter kernel for IPython
+  - jupyter_client            # Jupyter client for communication
+  - jupyter_core              # Core functionality for Jupyter
+  - matplotlib-inline         # Inline plotting in Jupyter notebooks
+
+  # Testing and Development
+  - pytest                    # Framework for testing Python code
+  - joblib                    # Efficient serialization and parallel computing
+  - setuptools                # Library for building and packaging Python projects
+  - wheel                     # Building wheels for Python packages
+
+  # Performance Optimization
+  - intel-openmp              # Parallel computing using OpenMP
+  - mkl                       # Intel Math Kernel Library for optimized computations
+  - mkl-service               # Helper for managing Intel MKL services
+  - numba                     # JIT compiler for accelerating numerical functions
+  - llvmlite                  # LLVM binding used by Numba
+
+  # Image Processing
+  - pillow                    # Image processing capabilities
+
+  # Compression Libraries
+  - zlib                      # Compression library for gzip format
+  - lz4-c                     # LZ4 compression for fast data compression
+  - brotli                    # Brotli compression for web data
+  - snappy                    # Snappy compression, often used in big data systems
+  - zstd                      # Zstandard compression for modern data handling
+
+  # Pip Dependencies (if any additional packages are needed)
+  - pip
+  - pip:
+      - some-package-from-pip  # Replace or add any pip-only packages here
