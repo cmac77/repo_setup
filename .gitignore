@@ -17,8 +17,7 @@ venv/
 .env
 
 # Ignore data files (adjust as necessary for your project)
-data/raw/
-data/processed/
+
 
 # Ignore logs
 logs/
