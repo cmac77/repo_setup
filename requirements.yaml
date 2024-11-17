@@ -29,7 +29,6 @@ dependencies:
   - tqdm                      # Progress bar utility
   - fsspec                    # File system specification for remote data handling
   - psutil                    # System and process utilities
-  - json-log-formatter        # JSON formatted logging for structured logs
 
   # Jupyter and Interactive Computing
   - ipython                   # Interactive Python shell
@@ -64,4 +63,4 @@ dependencies:
   # Pip Dependencies (if any additional packages are needed)
   - pip
   - pip:
-      - some-package-from-pip  # Replace or add any pip-only packages here
+      - json-log-formatter  # Install json-log-formatter using pip
