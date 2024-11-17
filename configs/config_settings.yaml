@@ -1,0 +1,53 @@
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  key_file: "data/raw"
+  results: "results"
+  scripts: "scripts"
+  src: "src"
+  logs: "results/logs"
+  tables: "results/tables"
+  figures: "results/figures"
+
+data_preprocessing:
+  remove_columns: []
+  apply_remapping:
+    column_mappings: {}
+    global_mappings:
+      "": null
+      "None": null
+      "NA": null
+      "N/A": null
+  handle_missing_values:
+    strategy: "mean"
+    fill_value: null
+  whitespace_handling:
+    mode: "strip"
+  replace_text:
+    modes: []
+  standardize_text: []
+  identify_string_numbers:
+    enabled: false
+  standardize_number_strings: []
+  convert_words_to_numbers:
+    enabled: false
+  standardize_numbers:
+    modes: []
+    inf_replacement: null
+  column_dtypes:
+    categorical:
+      columns: []
+      dtype: category
+    integer:
+      columns: []
+      dtype: Int64
+    float:
+      columns: []
+      dtype: float64
+    boolean:
+      columns: []
+      dtype: boolean
+    datetime:
+      columns: []
+      dtype: datetime64[ns]
