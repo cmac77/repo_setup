@@ -52,6 +52,7 @@ C:.
 │   pytest.ini
 │   README.md
 │   requirements.txt
+│   requirements.yaml
 │
 ├───configs
 │       config_settings.yaml
